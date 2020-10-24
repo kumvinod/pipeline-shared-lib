@@ -17,7 +17,7 @@ def call(String command) {
 			}
 		}	
 	}
-	else if (command == "deploy"){
+	else if (command == "deploy")
 	{
 		pipeline {
 			agent any
