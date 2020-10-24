@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
 
+#!/usr/bin/env groovy
+
 def call(String command) {
 	if (command == "build") 
 	{
@@ -12,6 +14,22 @@ def call(String command) {
 					steps 
 					{
 						echo "Build is executed"
+					}
+				}	
+			}
+		}	
+	}
+	else if (command == "deploy"){
+	{
+		pipeline {
+			agent any
+			stages 
+			{
+				stage("deploy") 
+				{
+					steps 
+					{
+						echo "deploy is executed"
 					}
 				}	
 			}
