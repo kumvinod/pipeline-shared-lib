@@ -1,7 +1,5 @@
 #!/usr/bin/env groovy
 
-#!/usr/bin/env groovy
-
 def call(String command) {
 	if (command == "build") 
 	{
